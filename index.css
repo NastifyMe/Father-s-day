@@ -213,3 +213,99 @@ button {
     background: #333;
     color: white;
 }
+
+/* --- Общие настройки для мобильных --- */
+@media (max-width: 768px) {
+    body, html {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .main {
+        width: 90%;
+        height: auto;
+        padding: 20px;
+    }
+
+    .title {
+        font-size: 32px;
+        text-align: center;
+    }
+
+    .main_img {
+        width: 150px;
+        margin: 10px 0;
+    }
+
+    .container_btns {
+        flex-direction: column;
+        gap: 10px;
+
+    }
+
+    .main_yes_button, .main_no_button {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .main_no_button{
+        margin-right: 20px;
+    }
+
+    .contaner_no, .container-choose, .container_list, .container-fotos {
+        width: 90%;
+        padding: 15px;
+    }
+
+    .container_choose_fotos img {
+        width: 120px;
+        margin: 10px;
+    }
+
+    .list-content {
+        max-width: 100%;
+    }
+
+    .img-list {
+        width: 100%;
+        margin-top: 15px;
+    }
+
+    .container-languages {
+        flex-wrap: wrap;
+        gap: 10px;
+        justify-content: center;
+    }
+
+    .fotos-foto-container {
+        grid-template-columns: repeat(2, 1fr);
+        margin-top: 0;
+    }
+
+    .fotos-foto-container img {
+        width: 100%;
+    }
+
+    .fotos-back {
+        grid-column: span 2;
+    }
+}
+
+/* --- Еще более маленькие экраны --- */
+@media (max-width: 480px) {
+    .title {
+        font-size: 28px;
+    }
+
+    .main_img {
+        width: 120px;
+    }
+
+    .container_choose_fotos img {
+        width: 100px;
+    }
+
+    .list-back, .choose-back, .back, .fotos-back, .main_yes_button, .main_no_button {
+        font-size: 14px;
+        padding: 8px;
+    }
+}
