@@ -158,20 +158,22 @@ button {
     transform: scale(1.05);
 }
 
-.container-languages{
+.container-languages {
     display: flex;
-    flex-direction: row;
-    gap: 40px;
-    margin-bottom: 45px;
+    flex-wrap: wrap;
+    gap: 8px;
+    justify-content: center;
+    margin-bottom: 25px;
 }
+
 .container-languages p {
-    padding: 8px 14px;
-    background: white;
-    border-radius: 10px;
-    cursor: pointer;
+    padding: 6px 10px;
+    font-size: 12px;
+    border-radius: 8px;
     border: 1px solid #ddd;
-    transition: 0.2s;
-    font-size: 14px;
+    
+    white-space: nowrap;   /* не ломает слова */
+    flex-shrink: 1;        /* разрешаем сжиматься */
 }
 
 .container-languages p:hover {
@@ -312,14 +314,14 @@ button {
         flex-direction: row;
     } */
     .container-languages {
-        gap: 8px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr); /* 3 в ряд */
+        gap: 6px;
     }
-
+    
     .container-languages p {
+        text-align: center;
         font-size: 11px;
-        padding: 5px 8px;
-    }
-    .fotos-foto-container{
-
+        padding: 6px 4px;
     }
 }
