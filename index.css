@@ -244,15 +244,11 @@ button {
     }
 
     .main_yes_button, .main_no_button {
-        width: 100%;
-        margin-bottom: 20px;
-    }
-    .main_no_button{
-        margin-right: 20px;
+        padding: 14px;
     }
 
     .contaner_no, .container-choose, .container_list, .container-fotos {
-        width: 90%;
+        /* width: 90%; */
         padding: 15px;
     }
 
@@ -278,7 +274,7 @@ button {
 
     .fotos-foto-container {
         grid-template-columns: repeat(2, 1fr);
-        margin-top: 0;
+        margin-top: 938px;
     }
 
     .fotos-foto-container img {
@@ -306,6 +302,24 @@ button {
 
     .list-back, .choose-back, .back, .fotos-back, .main_yes_button, .main_no_button {
         font-size: 14px;
-        padding: 8px;
+        padding: 10px;
+    }
+    .foto-no{
+        width: 300px;
+    }
+    /* .container-languages{
+        display: flex;
+        flex-direction: row;
+    } */
+    .container-languages {
+        gap: 8px;
+    }
+
+    .container-languages p {
+        font-size: 11px;
+        padding: 5px 8px;
+    }
+    .fotos-foto-container{
+
     }
 }
