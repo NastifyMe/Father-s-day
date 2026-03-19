@@ -160,20 +160,23 @@ button {
 
 .container-languages {
     display: flex;
-    flex-wrap: wrap;
     gap: 8px;
-    justify-content: center;
-    margin-bottom: 25px;
+    overflow-x: auto;   /* 🔥 ключ */
+    padding-bottom: 5px;
+    max-width: 100%;
+
+    scrollbar-width: none; /* скрыть скролл (Firefox) */
+}
+
+.container-languages::-webkit-scrollbar {
+    display: none; /* скрыть скролл (Chrome) */
 }
 
 .container-languages p {
-    padding: 6px 10px;
+    flex: 0 0 auto;     /* 🔥 НЕ сжимается */
+    white-space: nowrap;
     font-size: 12px;
-    border-radius: 8px;
-    border: 1px solid #ddd;
-    
-    white-space: nowrap;   /* не ломает слова */
-    flex-shrink: 1;        /* разрешаем сжиматься */
+    padding: 6px 10px;
 }
 
 .container-languages p:hover {
@@ -196,7 +199,6 @@ button {
     padding: 20px;
     border-radius: 20px;
     box-shadow: 0 10px 30px rgba(0,0,0,0.1);
-    margin-top: 2200px;
 }
 
 .container-fotos img{
@@ -276,7 +278,6 @@ button {
 
     .fotos-foto-container {
         grid-template-columns: repeat(2, 1fr);
-        margin-top: 938px;
     }
 
     .fotos-foto-container img {
